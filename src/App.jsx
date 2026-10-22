@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import landingBody from './landing-body.generated.js';
 
 export function App() {
