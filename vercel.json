@@ -1,0 +1,17 @@
+{
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "cleanUrls": false,
+  "trailingSlash": true,
+  "headers": [
+    {
+      "source": "/data/(.*)",
+      "headers": [{"key": "Cache-Control", "value": "public, max-age=3600"}]
+    },
+    {
+      "source": "/py/(.*)",
+      "headers": [{"key": "Cache-Control", "value": "public, max-age=3600"}]
+    }
+  ]
+}
